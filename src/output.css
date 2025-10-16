@@ -8,6 +8,10 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --spacing: 0.25rem;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -161,8 +165,26 @@
   }
 }
 @layer utilities {
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
+  .mt-\[40px\] {
+    margin-top: 40px;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
+  .mt-\[50pxpx\] {
+    margin-top: 50pxpx;
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .max-w-1296 {
+    max-width: calc(var(--spacing) * 1296);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -170,12 +192,148 @@
   .resize {
     resize: both;
   }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#6366F1\] {
+    background-color: #6366F1;
+  }
+  .bg-\[\#D946EF\] {
+    background-color: #D946EF;
+  }
+  .bg-\[\#FFFFFF\] {
+    background-color: #FFFFFF;
+  }
+  .bg-\[\#d846ef00\] {
+    background-color: #d846ef00;
+  }
+  .bg-\[\#d846ef1b\] {
+    background-color: #d846ef1b;
+  }
+  .bg-\[\#d846ef4f\] {
+    background-color: #d846ef4f;
+  }
+  .bg-\[\#d846ef10\] {
+    background-color: #d846ef10;
+  }
+  .bg-\[\#d846ef29\] {
+    background-color: #d846ef29;
+  }
+  .bg-\[\#ffffff\] {
+    background-color: #ffffff;
+  }
+  .bg-\[\#fffffff\] {
+    background-color: #fffffff;
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-\[60px\] {
+    padding-inline: 60px;
+  }
+  .px-\[90px\] {
+    padding-inline: 90px;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
+  .py-\[5px\] {
+    padding-block: 5px;
+  }
+  .py-\[6px\] {
+    padding-block: 6px;
+  }
+  .py-\[8px\] {
+    padding-block: 8px;
+  }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
+  }
+  .py-\[40px\] {
+    padding-block: 40px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
+  }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
+  .pb-\[50px\] {
+    padding-bottom: 50px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
+  .text-\[36px\] {
+    font-size: 36px;
+  }
+  .text-\[45px\] {
+    font-size: 45px;
+  }
+  .text-\[70px\] {
+    font-size: 70px;
+  }
+  .text-\[140px\] {
+    font-size: 140px;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#6366F1\] {
+    color: #6366F1;
+  }
+  .text-\[\#FFFFFF\] {
+    color: #FFFFFF;
+  }
+  .text-\[10\\1px\] {
+    color: 10\1px;
+  }
   .text-amber-300 {
     color: var(--color-amber-300);
+  }
+  .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
   }
   .underline {
     text-decoration-line: underline;
@@ -190,6 +348,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -199,6 +361,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
