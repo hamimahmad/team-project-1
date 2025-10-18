@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+
+.container{
+    width: 1296px;
+    margin: auto;
+}
+ footer ul li {
+    margin-bottom: 8px;
+ }
