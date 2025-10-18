@@ -7,7 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --spacing: 0.25rem;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -161,45 +164,86 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
+  .mt-\[20px\] {
+    margin-top: 20px;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .mt-\[24px\] {
+    margin-top: 24px;
   }
-  .resize {
-    resize: both;
+  .flex {
+    display: flex;
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
+  .h-\[25px\] {
+    height: 25px;
   }
-  .text-amber-300 {
-    color: var(--color-amber-300);
+  .h-\[52px\] {
+    height: 52px;
   }
-  .underline {
-    text-decoration-line: underline;
+  .h-\[102px\] {
+    height: 102px;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .h-\[125px\] {
+    height: 125px;
+  }
+  .h-\[276px\] {
+    height: 276px;
+  }
+  .h-\[526px\] {
+    height: 526px;
+  }
+  .w-\[85px\] {
+    width: 85px;
+  }
+  .w-\[159px\] {
+    width: 159px;
+  }
+  .w-\[489px\] {
+    width: 489px;
+  }
+  .w-\[526px\] {
+    width: 526px;
+  }
+  .w-\[1296px\] {
+    width: 1296px;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
+  }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[32px\] {
+    font-size: 32px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
 }
-@property --tw-border-style {
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
+      --tw-font-weight: initial;
     }
   }
 }
