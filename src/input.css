@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@theme{
+    --breakpoint-*: initial;
+    --breakpoint-sm: 320px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1296px;
+}
+
+@utility container {
+    margin-inline: auto;
+  }
+
+  body {
+      font-family: "Manrope", sans-serif;
+  }
+
+.bg {
+    background-image: url('./Image/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
