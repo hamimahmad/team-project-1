@@ -14,57 +14,98 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div class="flex justify-between items-center py-8">
-                <div class="flex items-center  gap-10">
-                    <div>
-                        <img src="../Image/logo.png" alt="">
-                    </div>
-                    <ul class="flex gap-10 text-[16px] font-semibold text-[#33354D] cursor-pointer">
-                        <li class="hover:text-[#6C63FF]">Services</li>
-                        <li class="hover:text-[#6C63FF]">About</li>
-                        <li class="hover:text-[#6C63FF]">Testimonials</li>
-                        <li class="hover:text-[#6C63FF]">Blog</li>
-                        <li class="hover:text-[#6C63FF]">Contact</li>
-                    </ul>
+    <nav class="container">
+        <div class="flex justify-between items-center py-8">
+            <div class="flex items-center  gap-10">
+                <div>
+                    <img src="../Image/logo.png" alt="">
                 </div>
+                <ul class="flex gap-10 text-[16px] font-semibold text-[#33354D] cursor-pointer">
+                    <li class="hover:text-[#6C63FF]">Services</li>
+                    <li class="hover:text-[#6C63FF]">About</li>
+                    <li class="hover:text-[#6C63FF]">Testimonials</li>
+                    <li class="hover:text-[#6C63FF]">Blog</li>
+                    <li class="hover:text-[#6C63FF]">Contact</li>
+                </ul>
+            </div>
 
-                <div class="flex items-center space-x-6">
-                    <!-- Light / Dark Toggle -->
-                    <div class="flex space-x-2">
-                        <span class="text-[#565973] font-semibold">Light</span>
-                        <label for="check" class="relative bg-[#6C63FF] cursor-pointer w-[46px] h-[24px] rounded-full">
-                            <input type="checkbox" id="check" class="sr-only peer" />
-                            <span
-                                class="w-2/5 h-4/5 absolute bg-white rounded-full left-1 top-0.5 duration-300 peer-checked:bg-white peer-checked:left-6 transition-all">
-                            </span>
-                        </label>
-                        <span class="text-[#565973] font-semibold">Dark</span>
+            <div class="flex items-center space-x-6">
+                <!-- Light / Dark Toggle -->
+                <div class="flex space-x-2">
+                    <span class="text-[#565973] font-semibold">Light</span>
+                    <label for="check" class="relative bg-[#6C63FF] cursor-pointer w-[46px] h-[24px] rounded-full">
+                        <input type="checkbox" id="check" class="sr-only peer" />
+                        <span
+                            class="w-2/5 h-4/5 absolute bg-white rounded-full left-1 top-0.5 duration-300 peer-checked:bg-white peer-checked:left-6 transition-all">
+                        </span>
+                    </label>
+                    <span class="text-[#565973] font-semibold">Dark</span>
+                </div>
+                <!-- Sign in button -->
+                <button
+                    class="flex justify-center items-center gap-2.5 text-[#6366F1] border-1 rounded-[4px] px-5 py-2.25 cursor-pointer"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#6366F1">
+                        <path
+                            d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+                    </svg> Sign in</button>
+                <!-- Sign up button -->
+                <button
+                    class="flex justify-center items-center gap-2.5 text-white bg-[#6366F1] border-1 rounded-[4px] px-5 py-2.25 cursor-pointer"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#ffffff">
+                        <path
+                            d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+                    </svg>Sign up</button>
+            </div>
+        </div>
+    </nav>
+    <!-- banner part start -->
+    <dev class="banner h-[500px] flex mb-24">
+        <div class="container">
+            <div class="h-[526px] w-[489px]">
+                <h5 class=" w-[526px] h-[52px] font-bold text-[40px] mt-[24px] text-8xl">About Silicon 2</h5>
+                <p class="mt-[20px] text-[20px]">We are a dedicated team of passionate product managers, full stack
+                    developers, UX/UI designers, QA engineers and marketing experts helping businesses of every
+                    size —
+                    from
+                    new startups to public companies — launch their projects using our software.</p>
+                <div class="mt-[24px] ">
+                    <div class="flex gap-3">
+                        <p class="text-[12px]">REVIEWED ON</p>
+                        <img src="../Image/rating.png" alt="">
                     </div>
-                    <!-- Sign in button -->
-                    <button
-                        class="flex justify-center items-center gap-2.5 text-[#6366F1] border-1 rounded-[4px] px-5 py-2.25 cursor-pointer"><svg
-                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#6366F1">
-                            <path
-                                d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
-                        </svg> Sign in</button>
-                    <!-- Sign up button -->
-                    <button
-                        class="flex justify-center items-center gap-2.5 text-white bg-[#6366F1] border-1 rounded-[4px] px-5 py-2.25 cursor-pointer"><svg
-                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#ffffff">
-                            <path
-                                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
-                        </svg>Sign up</button>
+                    <div class="flex gap-3">
+                        <div class="w-[85px] h-[25px]">
+                            <img src="../Image/Frame.png" alt="">
+                        </div>
+
+                        <p class="16px ">49 reviews</p>
+                    </div>
+                    <div class="flex mt-[24px]">
+                        <div class="w-[159px] h-[102px]">
+                            <p class="font-bold">2,480</p>
+                            <p class="text-[16px]">Remote Sales <br> Experts</p>
+                        </div>
+                        <div class="w-[159px] h-[102px]">
+                            <p class="font-bold">1,200</p>
+                            <p class="text-16px">Requests<br> per Week</p>
+                        </div>
+
+                        <div class="w-[159px] h-[102px]">
+                            <p class="font-bold">760</p>
+                            <p class="text-[16px]">New Clients <br>per Month</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="flex justify-center items-center w-[1296px] mx-auto">
-            <img src="../Image/Video.png" alt="">
         </div>
-
+    </dev>
+    <!-- video part start -->
+    <div class="flex justify-center items-center w-[1296px] mx-auto">
+        <img src="../Image/Video.png" alt="">
+    </div>
+    <div class="container">
         <div class="flex justify-between mt-28">
             <div class="w-[40%]">
                 <h2 class="text-[32px] font-extrabold w-102.5">Award-winning designs featured by</h2>
@@ -90,6 +131,9 @@
             </div>
 
         </div>
+    </div>
+    <!-- testimonial part start -->
+    <div class="container">
         <div class="flex gap-5 justify-between mt-28">
             <div class="w-[40%]">
                 <h2 class="text-[40px] bg-pink-50 font-extrabold px-14 py-35.5">What Our Clients Say About Silicon
@@ -104,7 +148,8 @@
                         <img src="../Image/slider-btns.png" alt="">
                     </div>
                 </div>
-                <p class=" text-[18px] py-8 w-[650px]">Vestibulum nunc lectus auctor quis. Natoque lectus tortor lacus,
+                <p class=" text-[18px] py-8 w-[650px]">Vestibulum nunc lectus auctor quis. Natoque lectus tortor
+                    lacus,
                     eu. Nunc feugiat nisl
                     maecenas nulla hac morbi. Vitae, donec facilisis sed nunc netus. Venenatis posuere faucibus enim
                     est. Vel dignissim morbi blandit morbi tellus. Arcu ullamcorper quis enim.</p>
@@ -124,6 +169,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- leadership part start -->
+    <div class="container">
         <div class="mt-[112px]">
             <h2 class="text-[40px] font-extrabold text-center">Our Leadership</h2>
             <div class="flex flex-wrap gap-5 mt-10">
@@ -185,7 +233,9 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <!-- contact us part start -->
+    <div class="container">
         <div class="bg mt-[112px]">
             <div class="text-center py-24">
                 <h2 class="text-[24px] text-white">Want to work with us? Let’s talk</h2>
@@ -193,62 +243,131 @@
                 <button class="bg-white px-8 py-3.25 rounded-[8px] cursor-pointer">Contact us</button>
             </div>
         </div>
+    </div>
+    <!-- social networks part start -->
+    <div class="container mt-28">
+        <div class="text-center">
+            <h1 class="text-[32px] font-bold">We Have Social Networks</h1>
+            <p class="text-[18px]">Follow us and keep up to date with the freshest news!</p>
+        </div>
 
-        <footer>
-            <div class="flex justify-between items-center mt-[184px] pb-8">
-                <div>
-                    <div>
-                        <img src="../Image/logo.png" alt="">
-                    </div>
-                    <p class="w-104 mt-6">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit.
-                        Lacus,
-                        eget eu vitae
-                        nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget
-                        elementum dolor ullamcorper sodales ultrices eros. </p>
-                    <div>
-                        <label class="block text-sm/6 font-semibold text-gray-900 mt-10">Subscribe to our
-                            newsletter</label>
-                        <div class="mt-2">
-                            <div
-                                class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
-                                <div class="shrink-0 select-none text-sm/6"><svg xmlns="http://www.w3.org/2000/svg"
-                                        height="20px" viewBox="0 -960 960 960" width="20px" fill="#B4B7C9">
-                                        <path
-                                            d="m480-920 362 216q18 11 28 30t10 40v434q0 33-23.5 56.5T800-120H160q-33 0-56.5-23.5T80-200v-434q0-21 10-40t28-30l362-216Zm0 466 312-186-312-186-312 186 312 186Zm0 94L160-552v352h640v-352L480-360Zm0 160h320-640 320Z" />
-                                    </svg></div>
-                                <input type="email" name="email" placeholder="Your Email"
-                                    class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
-                                <button class="bg-[#6366F1] text-white px-7 py-2.75 rounded-[4px]">Subscribe</button>
-                            </div>
-                            <p class="text-[#9397AD] text-[14px] mt-18">© 2023 Silicon Studio. All rights reserved.</p>
-                        </div>
-                    </div>
+        <div class="flex justify-around items-center mt-14 mx-auto flex-wrap gap-6">
+            <div class="w-[176px] h-[125px] gap-[48px] items-center">
+                <div class="h-[52px] w-[52px] mb-6">
+                    <img src="../Image/fb.png" alt="">
                 </div>
-                <div class="flex gap-[136px]">
-                    <ul>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Home</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">About</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Services</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Portfolio</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Blog</li>
-                        <h2 class="text-[#33354D] font-semibold mt-10 cursor-pointer">Terms & Conditions</h2>
-                        <h2 class="text-[#33354D] font-semibold cursor-pointer">Privacy Policy</h2>
-                    </ul>
-                    <ul>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Facebook</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Twitter</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Instagram</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">LinkedIn</li>
-                        <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">YouTube</li>
-                    </ul>
-                    <ul>
-                        <li class="mb-2 cursor-pointer">Contact Us</li>
-                        <li class="text-[#6C63FF] cursor-pointer">example@gmail.com</li>
-                    </ul>
+                <div>
+                    <p> Facebook </p>
+                    <p>silicon</p>
                 </div>
             </div>
-        </footer>
+            <div class="w-[176px] h-[125px] gap-[48px] items-center">
+                <div class="h-[52px] w-[52px] mb-6">
+                    <img src="../Image/insta.png" alt="">
+                </div>
+                <div>
+                    <p> Instagram </p>
+                    <p>@silicon</p>
+                </div>
+            </div>
+
+            <div class="w-[176px] h-[125px] gap-[48px] items-center">
+                <div class="h-[52px] w-[52px] mb-6">
+                    <img src="../Image/twitter.png" alt="">
+                </div>
+                <div>
+                    <p> Twitter </p>
+                    <p>@silicon</p>
+                </div>
+            </div>
+
+            <div class="w-[176px] h-[125px] gap-[48px] items-center">
+                <div class="h-[52px] w-[52px] mb-6">
+                    <img src="../Image/linkdin.png" alt="">
+                </div>
+                <div>
+                    <p> Linkedin </p>
+                    <p>Silicon Inc.</p>
+                </div>
+            </div>
+
+            <div class="w-[176px] h-[125px] gap-[48px] items-center">
+                <div class="h-[52px] w-[52px] mb-6">
+                    <img src="../Image/youtube.png" alt="">
+                </div>
+                <div>
+                    <p> YouTube </p>
+                    <p>Silicon</p>
+                </div>
+            </div>
+
+            <div class="w-[176px] h-[125px] gap-[48px] items-center">
+                <div class="h-[52px] w-[52px] mb-6">
+                    <img src="../Image/brws.png" alt="">
+                </div>
+                <div>
+                    <p> Dribbble </p>
+                    <p>Silicon</p>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+    <footer class="container">
+        <div class="flex justify-between items-center mt-[184px] pb-8">
+            <div>
+                <div>
+                    <img src="../Image/logo.png" alt="">
+                </div>
+                <p class="w-104 mt-6">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit.
+                    Lacus,
+                    eget eu vitae
+                    nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget
+                    elementum dolor ullamcorper sodales ultrices eros. </p>
+                <div>
+                    <label class="block text-sm/6 font-semibold text-gray-900 mt-10">Subscribe to our
+                        newsletter</label>
+                    <div class="mt-2">
+                        <div
+                            class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+                            <div class="shrink-0 select-none text-sm/6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="20px" viewBox="0 -960 960 960" width="20px" fill="#B4B7C9">
+                                    <path
+                                        d="m480-920 362 216q18 11 28 30t10 40v434q0 33-23.5 56.5T800-120H160q-33 0-56.5-23.5T80-200v-434q0-21 10-40t28-30l362-216Zm0 466 312-186-312-186-312 186 312 186Zm0 94L160-552v352h640v-352L480-360Zm0 160h320-640 320Z" />
+                                </svg></div>
+                            <input type="email" name="email" placeholder="Your Email"
+                                class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
+                            <button class="bg-[#6366F1] text-white px-7 py-2.75 rounded-[4px]">Subscribe</button>
+                        </div>
+                        <p class="text-[#9397AD] text-[14px] mt-18">© 2023 Silicon Studio. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-[136px]">
+                <ul>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Home</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">About</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Services</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Portfolio</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Blog</li>
+                    <h2 class="text-[#33354D] font-semibold mt-10 cursor-pointer">Terms & Conditions</h2>
+                    <h2 class="text-[#33354D] font-semibold cursor-pointer">Privacy Policy</h2>
+                </ul>
+                <ul>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Facebook</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Twitter</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">Instagram</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">LinkedIn</li>
+                    <li class="mb-4 cursor-pointer hover:text-[#6C63FF]">YouTube</li>
+                </ul>
+                <ul>
+                    <li class="mb-2 cursor-pointer">Contact Us</li>
+                    <li class="text-[#6C63FF] cursor-pointer">example@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>>
 </body>
 
 </html>

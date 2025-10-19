@@ -16,6 +16,14 @@
       font-family: "Manrope", sans-serif;
   }
 
+  .banner {
+    background-image: url('./Image/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+
 .bg {
     background-image: url('./Image/bg.png');
     background-size: cover;
