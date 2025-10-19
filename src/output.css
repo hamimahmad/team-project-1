@@ -561,21 +561,21 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
-  .text-\[\#9\] {
+  /* .text-\[\#9\] {
     color: #9;
   }
   .text-\[\#93\] {
     color: #93;
-  }
+  } */
   .text-\[\#9397\] {
     color: #9397;
   }
   .text-\[\#9397ad\] {
     color: #9397ad;
   }
-  .text-\[\#\] {
+  /* .text-\[\#\] {
     color: #;
-  }
+  } */
   .text-amber-300 {
     color: var(--color-amber-300);
   }
@@ -678,7 +678,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-font-weight {
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
