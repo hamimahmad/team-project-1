@@ -1,4 +1,7 @@
 @import "tailwindcss";
+body{
+  font-family: "Manrope", sans-serif;
+}
 
 @theme {
   --color-midnight: #121063;
