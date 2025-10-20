@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+  --container: 1296px;
+}
+body{
+  font-family: 'Manrope', sans-serif;
+}
